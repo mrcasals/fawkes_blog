@@ -13,7 +13,7 @@ defmodule FawkesBlog.Router do
         plug(:put_layout, {FawkesBlog.BlogLayoutView, "app.html"})
       end
 
-      scope "/blog", FawkesBlog.Web do
+      scope "/blog", FawkesBlog do
         pipe_through(:browser)
         pipe_through(:blog_layout)
 
