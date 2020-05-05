@@ -10,7 +10,7 @@ defmodule FawkesBlog.Router do
   defmacro blog_routes(_opts \\ []) do
     quote do
       pipeline :blog_layout do
-        plug(:put_layout, {FawkesBlogWeb.BlogLayoutView, "app.html"})
+        plug(:put_layout, {FawkesBlog.BlogLayoutView, "app.html"})
       end
 
       scope "/blog", FawkesBlog.Web do

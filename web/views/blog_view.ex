@@ -1,3 +1,3 @@
-defmodule FawkesBlogWeb.BlogView do
-  use FawkesBlogWeb, :view
+defmodule FawkesBlog.BlogView do
+  use FawkesBlog.Web, :view
 end
