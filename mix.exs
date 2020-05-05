@@ -6,6 +6,7 @@ defmodule FawkesBlog.MixProject do
       app: :fawkes_blog,
       version: "0.1.0",
       elixir: "~> 1.10",
+      elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
@@ -28,6 +29,8 @@ defmodule FawkesBlog.MixProject do
       :phoenix
     ]
   end
+
+  defp elixirc_paths(_), do: ["lib", "web"]
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
